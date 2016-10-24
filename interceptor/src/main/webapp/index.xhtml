@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"   
+   xmlns:h="http://java.sun.com/jsf/html"
+   xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+	<title>Calcular La Velocidad</title>
+		<h:outputStylesheet library="css" name="home.css"/> 
+</h:head>
+<body>
+	<table class="table">
+		<tr>
+			<td colspan="2" align="center"><b><h:outputText id="estado" style="color: red" value="#{mbModel.estado}" size="20" /></b></td>
+		</tr>
+		<tr>
+			<td>
+				<h:form>
+			
+				<h:commandButton id="submitButton"
+					style="color: #{mbModel.botonUno.color}"
+					value="#{mbModel.botonUno.texto}"
+					actionListener="#{mbModel.botonEncender}"  >
+				</h:commandButton>
+			
+				</h:form>
+				</td>
+				<td>
+				<h:form>
+				<h:commandButton id="submitButton1"
+					style="olor: #{mbModel.botonDos.color}" 
+					value="#{mbModel.botonDos.texto}"
+					actionListener="#{mbModel.botonAcelerar}" >
+				</h:commandButton>
+				</h:form>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
